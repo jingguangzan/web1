@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>中智信元</title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			ul,li,ol{
+				list-style: none;
+			}
+			a{
+				color:#333333;
+				text-decoration: none;
+			}
+			.header{
+				height: 173px;
+				background-color: #eeeeef;
+			}
+			.logo{
+				text-align: center;
+				height: 97px;
+				padding-top: 32px;
+			}
+			.nav{
+				width:700px;
+				height: 45px;
+				background-color: #fff;
+				margin:0 auto;
+				border-radius: 23px;
+				font-size: 14px;
+			}
+			.nav li{
+				float：left;
+				height: 45px;
+				padding: 0 30px;
+				line-height: 45px;
+				background: url(images/huitiao.png) no-repeat right center;
+				display: inline-block;
+			}
+			.nav li a{
+				display: block;
+				height: 42px;
+			}
+			.first{
+				border-bottom: 3px solid #1e50ae;
+			}
+			.nav li:last-child{
+				background: none;
+			}
+			.banner{
+				width:100%;
+				height: 407px;
+				background: url(images/banner1.png) no-repeat center center;
+			}
+			.serve{
+				width: 100%;
+				height: 808px;
+				background-color: #ffffff;
+			}
+			h3{
+				margin-top: 60px;
+				text-align: center;
+				font-size: 34px;
+			}
+			p{
+				margin-top:24px;
+				text-align:center;
+				font-size:24px;
+				font-family:'Times New Roman';
+				margin-bottom:61px;
+			}
+			.skt{
+				width:1200px;
+				height:600px;
+				margin:0 auto;
+			}
+			.s11{
+				float:left;
+				height:400px;
+				padding-right:100px;
+			}
+			.s12{
+				float:left;
+				height:400px;
+			}
+			.s13{
+				float:left;
+				height:250px;
+				padding-right:100px;
+			}
+			.s14{
+				float:left;
+				height:250px;
+			}
+			.s11 li,.s12 li{
+				list-style-type:disc;
+				margin-left:75px;
+				margin-top:10px;
+				font-size:14px;
+				color:#c8c8c8;
+			}
+			.skt p{
+				margin-top:22px;
+				text-align:center;
+			}
+			.rng{
+				width:100%;
+				height:712px;
+				background:url(images/lantu.png) no-repeat center;
+				padding-top:66px;
+			}
+			.r3{
+				font-size:34px;
+				color:white;
+				text-align:center;
+				margin-bottom:24px;
+			}
+			.r2{
+				font-size:24px；
+				color:white;
+				text-align:center;
+				font-family:'Times New Roman';
+			}
+			.r1{
+				margin-left:124px;
+				margin-top:75px;
+				height:298px;
+				width:1200px;
+			}
+			.r1 img{
+				margin-right:52px;
+				float:left;
+			}
+			.rng button{
+				font-size:20px;
+				color:white;
+				width:230px;
+				height:50px;
+				background:#43577a;
+				border:2px solid #fff;
+				border-radius:25px;
+				margin-top:80px;
+				margin-left:532px;
+			}
+			.edg{
+				width:100%;
+				height:465px;
+				padding-top:58px;
+			}
+			.edg1{
+				font-size:34px;
+				margin-bottom:22px;
+			}
+			.edg2{
+				font-size:24px;
+				font-family:'Times New Roman';
+			}
+			.edg img{
+				margin-left:100px;
+				margin-top:30px;
+				float:left;
+			}
+			.edg3{
+				width:510px;
+				height:420px;
+				margin-left:26px;
+				margin-top:10px;
+				float:left;
+			}
+			.edg4{
+				font-size:22px;
+				text-align: left;
+			}
+			.edg5{
+				font-size:18px;
+				margin-top:20px;
+				color:#494949;
+				margin-bottom:19px;
+				text-align: left;
+			}
+			.edg6{
+				font-size:14px;
+				color:#c8c8c8;
+				line-height:46px;
+				text-align: left;
+				margin-bottom: 10px;
+			}
+			.edg3 button{
+				margin-top:17px;
+				width:140px;
+				height:41px;
+				background:white;
+				border-radius:21px;
+				border:1px solid blue;
+				color:blue;
+				font-size:16px;
+			}
+			.qiye{
+				width:100%;
+				height:445px;
+				margin-top:98px;
+			}
+			.qiye1{
+				float:left;
+				margin-left:100px;
+				color:#c8c8c8;
+			}
+			.qiye2{
+				float:left;
+				margin-left:80px;
+				color:#c8c8c8;
+			}
+			.qiye li{
+				padding:20px 0;
+				background:url(images/upline.png) no-repeat bottom center;
+				font-size:14px;
+			}
+			.qiye1 li:last-child,.qiye2 li:last-child{
+				background:none;
+			}
+			.down{
+				width: 100%;
+				height: 130px;
+				margin-top: 20px;
+				background-color: #f5f5f5;
+			}
+			.downnav{
+				width: 100%
+				height:100px;
+			}
+			.downnav li{
+				float: left;
+				margin-left: 50px;
+				width: 280px;
+				height: 100px;
+				background: url(images/downline.png) no-repeat right center;
+				display:inline-block;
+			}
+			.downnav li:last-child{
+				float: left;
+				margin: 0 auto;
+				width: 280px;
+				height: 100px;
+				background: none;
+				display: inline-block;
+			}
+			.downimg{
+				height: 100px;
+				float: left;
+				margin-left: 20px;
+				margin-top: 20px;
+			}
+			.p1{
+				text-align: left;
+				font-size: 19px;
+				margin-bottom: 10px;
+				margin-top: 40px;
+			}
+			.p2{
+				text-align: left;
+				font-size: 13px;
+				margin:0;
+			}
+			.end{
+				width:100%;
+				height:261px;
+				background:#323232;
+			}
+			.end1{
+				height:140px;
+				padding-top:75px;
+				margin-left:100px;
+				float:left;
+			}
+			.end1a{
+				width:73px;
+				height:136px;
+				margin-right:105px;
+				float:left;
+			}
+			.end1b{
+				width:73px;
+				height:136px;
+				margin-right:55px;
+				float:left;
+			}
+			.end1b p{
+				font-size:18px;
+				color:#fff;
+				margin-bottom:9px;
+			}
+			.end1b li{
+				font-size:14px;
+				margin-top:22px;
+				color:#fff;
+			}
+			.end1a p{
+				font-size:18px;
+				color:#fff;
+				margin-bottom:9px;
+			}
+			.end1a li{
+				font-size:14px;
+				margin-top:22px;
+				color:#fff;
+			}
+			.end2{
+				float:left;
+				margin-top:72px;
+			}
+			.end3{
+				float:left;
+				height:10px;
+				margin-left:33px;
+				margin-right:33px;
+				margin-top:50px;
+			}
+			.end3 p{
+				font-size:18px;
+				color:white;
+				margin-bottom:7px;
+				margin-top: 5px;
+			}
+			.wei{
+				font-size:18px;
+				color:white;
+				margin-bottom:7px;
+				margin-top: 5px;
+			}
+			.end4{
+				float:left;
+				margin-top:76px;
+			}
+			.end5{
+				float:left;
+				margin-left:80px;
+				margin-top:20px;
+				width:260px;
+				height:180px;
+			}
+			.last1{
+				background: url(images/qq.png) no-repeat left;
+			}
+			.last2{
+				background: url(images/weixin.png) no-repeat left;
+			}
+			.end5a{
+				font-size:18px;
+				color:white;
+				margin-bottom:22px;
+				height: 70px;
+				width: 270px;
+			}
+			.end5a li{
+				line-height: 50px;
+				padding-left: 30px;
+			}
+			.end5a li:first-child{
+				font-size: 20px;
+				margin-top: 30px;
+			}
+			.bot{
+				width:100%;
+				height:125px;
+				padding-top:37px;
+				background:#323232;
+				border-top:1px solid #777777;
+				text-align: center;
+			}
+			.bot1{
+				width:758px;
+				height:18px;
+				margin:0 auto;
+			}
+			.bot1 li{
+				color:white;
+				float:left;
+				height:15px;
+				font-size:14px;
+				padding:0 13px;
+				background:url(images/bottomline.png) no-repeat right center;
+			}
+			.bot1 li:last-child{
+				background:none;
+			}
+			.bot2{
+				margin-left:0px;
+				margin-top:24px;
+				font-size:14px;
+				color:white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<img src="images/logo.png" alt="">
+			</div>
+			<ul class="nav">
+				<li>
+					<a class="first" href="" alt="">首页</a>
+				</li>
+				<li>
+					<a href="" alt="">关于我们</a>
+				</li>
+				<li>
+					<a href="" alt="">中智服务</a>
+				</li>
+				<li>
+					<a href="" alt="">解决方案</a>
+				</li>
+				<li>
+					<a href="" alt="">最新资讯</a>
+				</li>
+				<li class="last">
+					<a href="" alt="">联系我们</a>
+				</li>
+			</ul>
+		</div>
+		<div class="banner">
+		</div>
+		<div class="serve">
+			<h3>服务项目</h3>
+			<p>SERVICE ITEMS</p>
+			<div class="skt">
+				<ul>
+					<li class="s11">
+						<img src="images/no1.png">
+						<p>工商代理</p>
+						<ul>
+							<li>公司注册</li>
+							<li>公司注册地址</li>
+							<li>分公司注册</li>
+							<li>外资注册</li>
+							<li>股权注销</li>
+							<li>公司注销</li>
+						</ul>
+					</li>
+					<li class="s11">
+						<img src="images/no2.png">
+						<p>财务代理</p>
+						<ul>
+							<li>代理记账</li>
+							<li>税务筹划</li>
+							<li>审计服务</li>
+						</ul>
+					</li>
+					<li class="s11">
+						<img src="images/no3.png">
+						<p>资质服务</p>
+						<ul>
+							<li>各类许可证</li>
+							<li>资质审批</li>
+							<li>高新企业</li>
+							<li>商标专利</li>
+						</ul>
+					</li>
+					<li class="s12">
+						<img src="images/no4.png">
+						<p>特色服务</p>
+						<ul><li></li></ul>
+					</li>
+					<li class="s13">
+						<img src="images/no5.png">
+						<p>公积金社保代理</p>
+					</li>
+					<li class="s13">
+						<img src="images/no6.png">
+						<p>办公室租赁</p>
+					</li>
+					<li class="s13">
+						<img src="images/no7.png">
+						<p>营业执照转让</p>
+					</li>
+					<li class="s14">
+						<img src="images/no8.png">
+						<p>法律服务</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="rng">
+			<p class="r3">解决方案</p>
+			<p class="r2">SOLUTION</p>
+			<div class="r1">
+				<img src="images/r1.png">
+				<img src="images/r2.png">
+				<img src="images/r3.png">
+				<img src="images/r4.png">
+			</div>
+			<button>了解更多>></button>
+		</div>
+		<div class="edg">
+			<p class="edg1">最新资讯</p>
+			<p class="edg2">LATEST IFORMATION</p>
+			<img src="images/qiu.png">
+			<div class="edg3">
+				<p class="edg4">交易明智&方便</p>
+				<p class="edg5">TRANSACTION WISE & CONVENIENT</p>
+				<p class="edg6">
+					要适应快速发展的差价合约市场，客户需要一个能让他们不用经纪商的介入就能分析实时报价、进行实时交易以及应用投资策略的平台。他们需要一个简单便捷的界面来管理们的账户，并能轻松查看图标和报告。
+				</p>
+				<button>了解详情</button>
+			</div>
+		</div>
+		<div class="qiye">
+			<ul class="qiye1">
+				<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+				<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+				<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+				<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+				<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+				<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+			</ul>
+			<ul class="qiye2">
+				<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+				<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+				<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+				<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+				<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+				<li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+			</ul>
+		</div>
+		<div class="down">
+			<ul class="downnav">
+				<li>
+					<img class="downimg" src="images/down1.png" alt="">
+					<p class="p1">资质认证</p>
+					<p class="p2">服务商100%实名认证</p>
+				</li>
+				<li>
+					<img class="downimg" src="images/down2.png" alt="">
+					<p class="p1">支付安全</p>
+					<p class="p2">明码标价支付及信息安全</p>
+				</li>
+				<li>
+					<img class="downimg" src="images/down3.png" alt="">
+					<p class="p1">保险赔付</p>
+					<p class="p2">为您提供担保赔付</p>
+				</li>
+				<li class="last">
+					<img class="downimg" src="images/down4.png" alt="">
+					<p class="p1">售后无忧</p>
+					<p class="p2">服务出问题经理全程跟进</p>
+				</li>
+			</ul>
+		</div>
+		<div class="end">
+			<div class="end1">
+				<div class="end1a">
+					<p>中智信元</p>
+					<ul>
+						<li>加入我们</li>
+						<li>联系我们</li>
+						<li>最新动态</li>
+					</ul>
+				</div>
+				<div class="end1a">
+					<p>订单服务</p>
+					<ul>
+						<li>支付方式</li>
+						<li>退款说明</li>
+						<li>购买流程</li>
+					</ul>
+				</div>
+				<div class="end1a">
+					<p>售后服务</p>
+					<ul>
+						<li>在线问答</li>
+						<li>服务中心</li>
+						<li>售后政策</li>
+					</ul>
+				</div>
+				<div class="end1b">
+					<p>常见问题</p>
+					<ul>
+						<li>新手帮助</li>
+						<li>支付帮助</li>
+						<li>开具支票</li>
+					</ul>
+				</div>
+			</div>
+			<img class="end2" src="images/weima.png">
+			<div class="end3">
+				<p class="wei">微</p>
+				<p>信</p>
+				<p>扫</p>
+				<p>一</p>
+				<p>扫</p>
+			</div>
+			<img class="end4" src="images/downright.png">
+			<div class="end5">
+				<ul class="end5a">
+					<li class="one">咨询热线：400-000-0000</li>
+					<li class="last1">1234567888@qq.com</li>
+					<li class="last2">某某企业网站官方微信</li>
+				</ul>
+				
+			</div>
+		</div> 
+		<div class="bot">
+			<div class="bot1">
+				<ul>
+					<li>首页</li>
+					<li>工商代理</li>
+					<li>财务代记账</li>
+					<li>股权交易与变更</li>
+					<li>企业贷款</li>
+					<li>办公室租赁</li>
+					<li>社保公积金代理</li>
+					<li>法律服务</li>
+				</ul>
+			</div>
+			<p class="bot2">? 2017-2018 中智信元有限公司 版权所有</p>
+		</div>
+	</body>
+</html>
